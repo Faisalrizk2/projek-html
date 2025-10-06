@@ -1,12 +1,78 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profil Pribadi</title>
-  </head>
-  <body>
-    <h1>Halo, Dunia!</h1>
-    <p>Nama: Faisal Rizky Rifaldi</p>
-    <p>Jurusan: Sistem Informasi</p>
-    <p>Hobi: Mendaki, Traveling, Membaca</p>
-  </body>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Profil Pribadi</h1>
+        <p>Selamat datang di halaman profil saya</p>
+    </header>
+
+    <main>
+        <!-- Foto Profil -->
+        <img src="https://via.placeholder.com/200" alt="Foto Profil" width="200">
+
+        <!-- Deskripsi -->
+        <section>
+            <h2>Tentang Saya</h2>
+            <p>Halo, nama saya <b>Andi Setiawan</b>. Saya seorang mahasiswa yang tertarik dengan dunia teknologi, khususnya di bidang <i>Pemrograman Web</i> dan <i>Basis Data</i>.</p>
+            <p>Kunjungi profil saya di 
+                <a href="https://github.com" target="_blank">GitHub</a>.
+            </p>
+        </section>
+
+        <!-- Tabel Pendidikan -->
+        <section>
+            <h2>Riwayat Pendidikan</h2>
+            <table>
+                <tr>
+                    <th>Tahun</th>
+                    <th>Institusi</th>
+                    <th>Keterangan</th>
+                </tr>
+                <tr>
+                    <td>2015 - 2018</td>
+                    <td>SMA Negeri 1 Kota</td>
+                    <td>Jurusan IPA</td>
+                </tr>
+                <tr>
+                    <td>2019 - Sekarang</td>
+                    <td>Universitas XYZ</td>
+                    <td>Teknik Informatika</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Hobi & Keahlian -->
+        <section>
+            <h2>Hobi & Keahlian</h2>
+            <ul>
+                <li>Pemrograman Web</li>
+                <li>Basis Data</li>
+                <li>Desain UI/UX</li>
+            </ul>
+        </section>
+
+        <!-- Form Kontak -->
+        <section>
+            <h2>Kontak Saya</h2>
+            <form action="#" method="post">
+                <label>Nama:</label>
+                <input type="text" name="nama" required>
+                
+                <label>Email:</label>
+                <input type="email" name="email" required>
+                
+                <label>Pesan:</label>
+                <textarea name="pesan" rows="5" required></textarea>
+                
+                <input type="submit" value="Kirim">
+            </form>
+        </section>
+    </main>
+</body>
 </html>
